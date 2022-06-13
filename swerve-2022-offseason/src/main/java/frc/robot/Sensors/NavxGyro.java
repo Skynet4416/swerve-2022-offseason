@@ -1,26 +1,26 @@
 package frc.robot.Sensors;
+
 import com.kauailabs.navx.frc.AHRS;
 
 import edu.wpi.first.math.geometry.Rotation2d;
-import edu.wpi.first.wpilibj.SPI.Port;
 
 public class NavxGyro {
     public AHRS ahrs;
 
-    public NavxGyro(edu.wpi.first.wpilibj.I2C.Port kmxp){
+    public NavxGyro(edu.wpi.first.wpilibj.I2C.Port kmxp) {
         ahrs = new AHRS(kmxp);
     }
 
-    public void reset(){
+    public void reset() {
         ahrs.reset();
     }
 
-    public double getYawRadians(){
+    public double getYawRadians() {
         return Math.toRadians(ahrs.getYaw() + 180);
     }
 
-    public Rotation2d getHeading(){
+    public Rotation2d getHeading() {
         return new Rotation2d(-ahrs.getAngle());
     }
-    
+
 }

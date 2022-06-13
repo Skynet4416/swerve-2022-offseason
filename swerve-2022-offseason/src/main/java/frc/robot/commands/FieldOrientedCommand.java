@@ -12,9 +12,9 @@ import edu.wpi.first.wpilibj2.command.CommandBase;
 
 /** An example command that uses an example subsystem. */
 public class FieldOrientedCommand extends CommandBase {
-  @SuppressWarnings({"PMD.UnusedPrivateField", "PMD.SingularField"})
+  @SuppressWarnings({ "PMD.UnusedPrivateField", "PMD.SingularField" })
   private SwerveSubsytem swerve_subsytem;
-  private DoubleSupplier x_velocity,y_velocity,rotation_velocity;
+  private DoubleSupplier x_velocity, y_velocity, rotation_velocity;
   private double max_velocity;
   private double max_rotation;
 
@@ -23,7 +23,8 @@ public class FieldOrientedCommand extends CommandBase {
    *
    * @param subsystem The subsystem used by this command.
    */
-  public FieldOrientedCommand(SwerveSubsytem swerve_subsytem,DoubleSupplier x_velocity, DoubleSupplier y_velocity, DoubleSupplier rotation_velocity ) {
+  public FieldOrientedCommand(SwerveSubsytem swerve_subsytem, DoubleSupplier x_velocity, DoubleSupplier y_velocity,
+      DoubleSupplier rotation_velocity) {
     this.swerve_subsytem = swerve_subsytem;
     this.x_velocity = x_velocity;
     this.y_velocity = y_velocity;
@@ -36,12 +37,14 @@ public class FieldOrientedCommand extends CommandBase {
 
   // Called when the command is initially scheduled.
   @Override
-  public void initialize() {}
+  public void initialize() {
+  }
 
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    this.swerve_subsytem.set_modules_field_orianted(x_velocity.getAsDouble()*max_velocity, y_velocity.getAsDouble()*max_velocity, rotation_velocity.getAsDouble()*max_rotation);
+    this.swerve_subsytem.set_modules_field_orianted(x_velocity.getAsDouble() * max_velocity,
+        y_velocity.getAsDouble() * max_velocity, rotation_velocity.getAsDouble() * max_rotation);
   }
 
   // Called once the command ends or is interrupted.

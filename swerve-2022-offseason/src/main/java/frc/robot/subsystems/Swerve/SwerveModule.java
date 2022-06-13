@@ -15,11 +15,8 @@ import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 
 import edu.wpi.first.math.controller.PIDController;
 import edu.wpi.first.math.geometry.Rotation2d;
-import edu.wpi.first.math.kinematics.SwerveDriveKinematics;
-import edu.wpi.first.math.kinematics.SwerveDriveOdometry;
 import edu.wpi.first.math.kinematics.SwerveModuleState;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
-import edu.wpi.first.wpilibj2.command.SwerveControllerCommand;
 
 public class SwerveModule extends SubsystemBase {
   /** Creates a new ExampleSubsystem. */
@@ -42,8 +39,8 @@ public class SwerveModule extends SubsystemBase {
     this.top_motor = new CANSparkMax(top_can, MotorType.kBrushless);
     this.buttom_motor = new CANSparkMax(buttom_can, MotorType.kBrushless);
     this.top_encoder = this.top_motor.getEncoder();
-    this.top_encoder.setVelocityConversionFactor( wheel_radius * 2 * Math.PI / 60);
-    this.buttom_encoder.setVelocityConversionFactor( wheel_radius * 2 * Math.PI / 60);
+    this.top_encoder.setVelocityConversionFactor(wheel_radius * 2 * Math.PI / 60);
+    this.buttom_encoder.setVelocityConversionFactor(wheel_radius * 2 * Math.PI / 60);
     this.buttom_encoder = this.buttom_motor.getEncoder();
     this.top_controller = this.top_motor.getPIDController();
     this.buttom_controller = this.buttom_motor.getPIDController();
@@ -74,6 +71,7 @@ public class SwerveModule extends SubsystemBase {
     this.set_velocity_buttom((velocity + rotational_velocity) / 2);
     this.set_velocity_top((rotational_velocity - velocity) / 2);
   }
+
   @Override
   public void periodic() {
     this.end_time = Instant.now();
@@ -89,8 +87,10 @@ public class SwerveModule extends SubsystemBase {
     this.set_module_rotations(this.velocity_controller.calculate(this.velocity_encoder, target_velcity),
         this.angle_controller.calculate(this.module_state.angle.getDegrees(), target_rotation));
   }
+
   public void set_module_state(SwerveModuleState target_state) {
-    this.set_module_rotations(this.velocity_controller.calculate(this.velocity_encoder, target_state.speedMetersPerSecond),
+    this.set_module_rotations(
+        this.velocity_controller.calculate(this.velocity_encoder, target_state.speedMetersPerSecond),
         this.angle_controller.calculate(this.module_state.angle.getDegrees(), target_state.angle.getDegrees()));
   }
 
