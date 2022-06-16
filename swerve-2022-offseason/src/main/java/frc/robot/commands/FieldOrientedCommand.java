@@ -29,7 +29,7 @@ public class FieldOrientedCommand extends CommandBase {
     this.x_velocity = x_velocity;
     this.y_velocity = y_velocity;
     this.rotation_velocity = rotation_velocity;
-    this.max_velocity = 5;
+    this.max_velocity = 4;
     this.max_rotation = Math.PI;
     // Use addRequirements() here to declare subsystem dependencies.
     addRequirements(swerve_subsytem);
