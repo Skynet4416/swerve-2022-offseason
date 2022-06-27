@@ -13,7 +13,14 @@ public class MyPIDController extends PIDController{
     @Override
     public double calculate(double messurment)
     {
-        return super.calculate(messurment) + this.kff * this.getSetpoint();
+        // return super.calculate(messurment) + this.kff * this.getSetpoint();
+        return super.calculate(messurment);
+    }
+    @Override
+    public double calculate(double messurment,double setpoint)
+    {
+        // return super.calculate(messurment) + this.kff * this.getSetpoint();
+        return super.calculate(messurment,setpoint);
     }
     public void setFF(double kff)
     {

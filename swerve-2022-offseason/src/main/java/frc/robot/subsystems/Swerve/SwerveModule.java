@@ -76,14 +76,15 @@ public class SwerveModule extends SubsystemBase {
     return 60 * mps / (2 * Math.PI * wheel_radius);
   }
   protected void set_rpm_buttom(double target_rpm) {
+    target_rpm = Math.max(Math.min(target_rpm,6000),-6000);
     this.buttom_controller.setReference(target_rpm, ControlType.kVelocity);
     SmartDashboard.putNumber(name + " buttom RPM setpoint", target_rpm);
   }
 
   protected void set_rpm_top(double target_rpm) {
+    target_rpm = Math.max(Math.min(target_rpm,6000),-6000);
     this.top_controller.setReference(target_rpm, ControlType.kVelocity);
     SmartDashboard.putNumber(name + " top setpoint", target_rpm);
-
   }
 
   protected void set_precentage_buttom(double precentage) {
@@ -109,7 +110,7 @@ public class SwerveModule extends SubsystemBase {
     this.wheel_rpm_encoder = this.top_encoder.getVelocity() - this.buttom_encoder.getVelocity();
     this.wheel_angle_velocity_rpm = this.top_encoder.getVelocity() + this.buttom_encoder.getVelocity();
     this.module_state.angle = Rotation2d.fromDegrees((this.module_state.angle.getDegrees()
-        + wheel_angle_velocity_rpm * (Duration.between(end_time, start_time).toMillis() / 1000)) % 360);
+        + wheel_angle_velocity_rpm * ((double) Duration.between(start_time, end_time).toNanos() / Math.pow(10,9))) % 360);
     this.module_state.speedMetersPerSecond = convert_rpm_to_mps(this.wheel_rpm_encoder);
     this.start_time = Instant.now();
     this.update_pid();
@@ -143,6 +144,7 @@ public class SwerveModule extends SubsystemBase {
   }
 
   public void set_module_state(double target_velocity_in_mps, double target_rotation_in_deg) {
+    SmartDashboard.putNumber(name + " wheel target velocity in mps", target_velocity_in_mps);
     this.set_module_rotations(this.velocity_controller.calculate(this.wheel_rpm_encoder, convert_mps_to_rpm(target_velocity_in_mps)),
         this.angle_controller.calculate(this.module_state.angle.getDegrees(), target_rotation_in_deg));
   }

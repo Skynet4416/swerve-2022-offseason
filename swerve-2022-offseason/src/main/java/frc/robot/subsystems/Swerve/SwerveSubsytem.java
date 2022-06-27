@@ -1,5 +1,7 @@
 package frc.robot.subsystems.Swerve;
 
+import edu.wpi.first.hal.SimDouble;
+import edu.wpi.first.hal.simulation.SimDeviceDataJNI;
 import edu.wpi.first.math.controller.PIDController;
 import edu.wpi.first.math.controller.SimpleMotorFeedforward;
 import edu.wpi.first.math.geometry.Pose2d;
@@ -30,15 +32,20 @@ public class SwerveSubsytem extends SubsystemBase {
     private SwerveDriveKinematics swerve_kinematics = new SwerveDriveKinematics(galit_location, iris_location,
             idan_location, amalia_location);
     private ChassisSpeeds swerve_speeds;
-    private NavxGyro gyro = new NavxGyro(Port.kMXP);
-    private SwerveDriveOdometry swerve_odemetry = new SwerveDriveOdometry(swerve_kinematics, gyro.getHeading(),
-            new Pose2d(0, 0, new Rotation2d())); // update start position
     private Pose2d current_pose;
+    private SwerveDriveOdometry swerve_odemetry;
     private final Field2d m_field = new Field2d();
+    private NavxGyro gyro;
+    int dev = SimDeviceDataJNI.getSimDeviceHandle("navX-Sensor[0]");
+    SimDouble angle = new SimDouble(SimDeviceDataJNI.getSimValueHandle(dev, "Yaw"));
 
-    public SwerveSubsytem() {
+    public SwerveSubsytem(NavxGyro gyro) {
+        this.gyro = gyro;
+        swerve_odemetry = new SwerveDriveOdometry(swerve_kinematics, gyro.getHeading(),
+                new Pose2d(0, 0, new Rotation2d())); // update start position
         SmartDashboard.putData("Field", this.m_field);
         set_pid();
+        SmartDashboard.putNumber("Navx", gyro.getHeading().getDegrees());
     }
 
     public void set_pid() {
@@ -69,6 +76,7 @@ public class SwerveSubsytem extends SubsystemBase {
         SmartDashboard.putNumber(name + " wheel velocity ki", pid[3][1]);
         SmartDashboard.putNumber(name + " wheel velocity kp", pid[3][2]);
         SmartDashboard.putNumber(name + " wheel velocity kff", pid[3][3]);
+
     }
 
     public double[][] get_contstants_by_name(String name) {
@@ -86,8 +94,10 @@ public class SwerveSubsytem extends SubsystemBase {
 
     @Override
     public void periodic() {
-        this.current_pose = swerve_odemetry.update(gyro.getHeading(), galit.module_state, iris.module_state,
+        this.current_pose = swerve_odemetry.update(Rotation2d.fromDegrees(angle.get()), galit.module_state,
+                iris.module_state,
                 idan.module_state, amalia.module_state);
+        SmartDashboard.putNumber("Gyro", angle.get());
         this.m_field.setRobotPose(this.current_pose);
     }
 
@@ -102,9 +112,7 @@ public class SwerveSubsytem extends SubsystemBase {
         amalia.set_module_state(target_states[3]);
     }
 
-    public static void main(String[] args) {
-        PIDController x = new PIDController(9.95, 0, 0);
-        SimpleMotorFeedforward y = new SimpleMotorFeedforward(0.268, 1.89, 0.243);
-        System.out.println(x.calculate(1000, 5000) + y.calculate(1000, 5000));
+    public void set_pos(Pose2d pos) {
+        this.swerve_odemetry.resetPosition(pos, gyro.getHeading());
     }
 }

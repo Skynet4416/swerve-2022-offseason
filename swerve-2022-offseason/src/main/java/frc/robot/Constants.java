@@ -37,14 +37,14 @@ public final class Constants {
                 }
 
                 public class AngleController {
-                    public static final double kp = 0;
+                    public static final double kp = 10;
                     public static final double ki = 0;
                     public static final double kff = 0;
                     public static final double kd = 0;
                 }
 
                 public class VelocityController {
-                    public static final double kp = 0;
+                    public static final double kp = 0.5;
                     public static final double ki = 0;
                     public static final double kff = 0;
                     public static final double kd = 0;
@@ -67,14 +67,14 @@ public final class Constants {
                 }
 
                 public class AngleController {
-                    public static final double kp = 0;
+                    public static final double kp = 10;
                     public static final double ki = 0;
                     public static final double kff = 0;
                     public static final double kd = 0;
                 }
 
                 public class VelocityController {
-                    public static final double kp = 0;
+                    public static final double kp = 0.5;
                     public static final double ki = 0;
                     public static final double kff = 0;
                     public static final double kd = 0;
@@ -97,14 +97,14 @@ public final class Constants {
                 }
 
                 public class AngleController {
-                    public static final double kp = 0;
+                    public static final double kp = 10;
                     public static final double ki = 0;
                     public static final double kff = 0;
                     public static final double kd = 0;
                 }
 
                 public class VelocityController {
-                    public static final double kp = 0;
+                    public static final double kp = 0.5;
                     public static final double ki = 0;
                     public static final double kff = 0;
                     public static final double kd = 0;
@@ -127,14 +127,14 @@ public final class Constants {
                 }
 
                 public class AngleController {
-                    public static final double kp = 0;
+                    public static final double kp = 10;
                     public static final double ki = 0;
                     public static final double kff = 0;
                     public static final double kd = 0;
                 }
 
                 public class VelocityController {
-                    public static final double kp = 0;
+                    public static final double kp = 0.5;
                     public static final double ki = 0;
                     public static final double kff = 0;
                     public static final double kd = 0;
