@@ -1,0 +1,1306 @@
+{
+  "tabPane": [
+    {
+      "title": "field",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "titleType": 0,
+        "tiles": {
+          "0,0": {
+            "size": [
+              5,
+              5
+            ],
+            "content": {
+              "_type": "Field",
+              "_source0": "network_table:///SmartDashboard/Field",
+              "_title": "SmartDashboard/Field",
+              "Game/Game": "A2021_Infinite_Recharge",
+              "Visuals/Robot Icon Size": 50.0,
+              "Visuals/Show Outside Circles": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Amalia",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "titleType": 0,
+        "tiles": {
+          "3,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia buttom RPM setpoint",
+              "_title": "SmartDashboard/Amalia buttom RPM setpoint"
+            }
+          },
+          "0,1": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Amalia buttom RPM setpoint",
+              "_title": "SmartDashboard/Amalia buttom RPM setpoint",
+              "Graph/Visible time": 10.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Amalia buttom RPM setpoint": true
+            }
+          },
+          "2,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia buttom kd",
+              "_title": "SmartDashboard/Amalia buttom kd"
+            }
+          },
+          "3,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia buttom kff",
+              "_title": "SmartDashboard/Amalia buttom kff"
+            }
+          },
+          "1,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia buttom ki",
+              "_title": "SmartDashboard/Amalia buttom ki"
+            }
+          },
+          "0,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia buttom kp",
+              "_title": "SmartDashboard/Amalia buttom kp"
+            }
+          },
+          "11,0": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Amalia top RPM",
+              "_title": "SmartDashboard/Amalia top RPM",
+              "Graph/Visible time": 10.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Amalia top RPM": true
+            }
+          },
+          "9,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia top kd",
+              "_title": "SmartDashboard/Amalia top kd"
+            }
+          },
+          "10,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia top kff",
+              "_title": "SmartDashboard/Amalia top kff"
+            }
+          },
+          "8,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia top ki",
+              "_title": "SmartDashboard/Amalia top ki"
+            }
+          },
+          "7,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia top kp",
+              "_title": "SmartDashboard/Amalia top kp"
+            }
+          },
+          "10,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia top setpoint",
+              "_title": "SmartDashboard/Amalia top setpoint"
+            }
+          },
+          "11,4": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Amalia wheel velcoity RPM",
+              "_title": "SmartDashboard/Amalia wheel velcoity RPM",
+              "Graph/Visible time": 10.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Amalia wheel velcoity RPM": true
+            }
+          },
+          "10,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia wheel velocity kd",
+              "_title": "SmartDashboard/Amalia wheel velocity kd"
+            }
+          },
+          "9,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia wheel velocity kff",
+              "_title": "SmartDashboard/Amalia wheel velocity kff"
+            }
+          },
+          "8,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia wheel velocity ki",
+              "_title": "SmartDashboard/Amalia wheel velocity ki"
+            }
+          },
+          "7,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia wheel velocity kp",
+              "_title": "SmartDashboard/Amalia wheel velocity kp"
+            }
+          },
+          "10,5": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia RPM setpoint",
+              "_title": "SmartDashboard/Amalia RPM setpoint"
+            }
+          },
+          "3,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia wheel angle kd",
+              "_title": "SmartDashboard/Amalia wheel angle kd"
+            }
+          },
+          "4,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia wheel angle kff",
+              "_title": "SmartDashboard/Amalia wheel angle kff"
+            }
+          },
+          "5,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia wheel angle ki",
+              "_title": "SmartDashboard/Amalia wheel angle ki"
+            }
+          },
+          "5,5": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia wheel angle kp",
+              "_title": "SmartDashboard/Amalia wheel angle kp"
+            }
+          },
+          "3,4": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia angle setpoint deg",
+              "_title": "SmartDashboard/Amalia angle setpoint deg"
+            }
+          },
+          "4,5": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Amalia angle velocity RPM",
+              "_title": "SmartDashboard/Amalia angle velocity RPM"
+            }
+          },
+          "0,4": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Amalia angle deg",
+              "_title": "/SmartDashboard/Amalia angle deg",
+              "Graph/Visible time": 10.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Amalia angle deg": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Galit",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "titleType": 0,
+        "tiles": {
+          "0,0": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Galit buttom RPM",
+              "_title": "/SmartDashboard/Galit buttom RPM",
+              "Graph/Visible time": 30.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Galit buttom RPM": true
+            }
+          },
+          "3,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit buttom RPM setpoint",
+              "_title": "/SmartDashboard/Galit buttom RPM setpoint"
+            }
+          },
+          "5,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit buttom kd",
+              "_title": "/SmartDashboard/Galit buttom kd"
+            }
+          },
+          "4,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit buttom ki",
+              "_title": "/SmartDashboard/Galit buttom ki"
+            }
+          },
+          "3,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit buttom kp",
+              "_title": "/SmartDashboard/Galit buttom kp"
+            }
+          },
+          "6,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit buttom kff",
+              "_title": "/SmartDashboard/Galit buttom kff"
+            }
+          },
+          "11,0": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Galit top RPM",
+              "_title": "/SmartDashboard/Galit top RPM",
+              "Graph/Visible time": 10.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Galit top RPM": true
+            }
+          },
+          "9,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit top kff",
+              "_title": "/SmartDashboard/Galit top kff"
+            }
+          },
+          "10,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit top kp",
+              "_title": "/SmartDashboard/Galit top kp"
+            }
+          },
+          "9,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit top ki",
+              "_title": "/SmartDashboard/Galit top ki"
+            }
+          },
+          "8,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit top kd",
+              "_title": "/SmartDashboard/Galit top kd"
+            }
+          },
+          "10,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit top setpoint",
+              "_title": "/SmartDashboard/Galit top setpoint"
+            }
+          },
+          "0,4": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Galit angle deg",
+              "_title": "/SmartDashboard/Galit angle deg",
+              "Graph/Visible time": 10.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Galit angle deg": true
+            }
+          },
+          "3,4": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit angle setpoint deg",
+              "_title": "/SmartDashboard/Galit angle setpoint deg"
+            }
+          },
+          "3,5": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit angle velocity RPM",
+              "_title": "/SmartDashboard/Galit angle velocity RPM"
+            }
+          },
+          "5,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit wheel angle kd",
+              "_title": "/SmartDashboard/Galit wheel angle kd"
+            }
+          },
+          "4,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit wheel angle ki",
+              "_title": "/SmartDashboard/Galit wheel angle ki"
+            }
+          },
+          "3,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit wheel angle kp",
+              "_title": "/SmartDashboard/Galit wheel angle kp"
+            }
+          },
+          "6,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit wheel angle kff",
+              "_title": "/SmartDashboard/Galit wheel angle kff"
+            }
+          },
+          "11,4": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Galit wheel velcoity RPM",
+              "_title": "/SmartDashboard/Galit wheel velcoity RPM",
+              "Graph/Visible time": 10.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Galit wheel velcoity RPM": true
+            }
+          },
+          "10,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit wheel velocity kp",
+              "_title": "/SmartDashboard/Galit wheel velocity kp"
+            }
+          },
+          "9,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit wheel velocity ki",
+              "_title": "/SmartDashboard/Galit wheel velocity ki"
+            }
+          },
+          "8,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit wheel velocity kd",
+              "_title": "/SmartDashboard/Galit wheel velocity kd"
+            }
+          },
+          "9,5": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit wheel velocity kff",
+              "_title": "/SmartDashboard/Galit wheel velocity kff"
+            }
+          },
+          "10,5": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Galit RPM setpoint",
+              "_title": "/SmartDashboard/Galit RPM setpoint"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Idan",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "titleType": 0,
+        "tiles": {
+          "0,0": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Idan buttom RPM",
+              "_title": "/SmartDashboard/Idan buttom RPM",
+              "Graph/Visible time": 10.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Idan buttom RPM": true
+            }
+          },
+          "3,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan buttom RPM setpoint",
+              "_title": "/SmartDashboard/Idan buttom RPM setpoint"
+            }
+          },
+          "3,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan buttom kp",
+              "_title": "/SmartDashboard/Idan buttom kp"
+            }
+          },
+          "4,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan buttom ki",
+              "_title": "/SmartDashboard/Idan buttom ki"
+            }
+          },
+          "5,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan buttom kd",
+              "_title": "/SmartDashboard/Idan buttom kd"
+            }
+          },
+          "6,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan buttom kff",
+              "_title": "/SmartDashboard/Idan buttom kff"
+            }
+          },
+          "11,0": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Idan top RPM",
+              "_title": "/SmartDashboard/Idan top RPM",
+              "Graph/Visible time": 10.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Idan top RPM": true
+            }
+          },
+          "10,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan top kp",
+              "_title": "/SmartDashboard/Idan top kp"
+            }
+          },
+          "9,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan top ki",
+              "_title": "/SmartDashboard/Idan top ki"
+            }
+          },
+          "8,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan top kd",
+              "_title": "/SmartDashboard/Idan top kd"
+            }
+          },
+          "9,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan top kff",
+              "_title": "/SmartDashboard/Idan top kff"
+            }
+          },
+          "10,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan top setpoint",
+              "_title": "/SmartDashboard/Idan top setpoint"
+            }
+          },
+          "0,4": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Idan angle deg",
+              "_title": "/SmartDashboard/Idan angle deg",
+              "Graph/Visible time": 10.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Idan angle deg": true
+            }
+          },
+          "3,4": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan angle setpoint deg",
+              "_title": "/SmartDashboard/Idan angle setpoint deg"
+            }
+          },
+          "3,5": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan angle velocity RPM",
+              "_title": "/SmartDashboard/Idan angle velocity RPM"
+            }
+          },
+          "5,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan wheel angle kd",
+              "_title": "/SmartDashboard/Idan wheel angle kd"
+            }
+          },
+          "3,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan wheel angle kp",
+              "_title": "/SmartDashboard/Idan wheel angle kp"
+            }
+          },
+          "4,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan wheel angle ki",
+              "_title": "/SmartDashboard/Idan wheel angle ki"
+            }
+          },
+          "6,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan wheel angle kff",
+              "_title": "/SmartDashboard/Idan wheel angle kff"
+            }
+          },
+          "11,4": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Idan wheel velcoity RPM",
+              "_title": "/SmartDashboard/Idan wheel velcoity RPM",
+              "Graph/Visible time": 10.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Idan wheel velcoity RPM": true
+            }
+          },
+          "10,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan wheel velocity kp",
+              "_title": "SmartDashboard/Idan wheel velocity kp"
+            }
+          },
+          "9,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan wheel velocity ki",
+              "_title": "SmartDashboard/Idan wheel velocity ki"
+            }
+          },
+          "8,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan wheel velocity kd",
+              "_title": "SmartDashboard/Idan wheel velocity kd"
+            }
+          },
+          "9,5": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan wheel velocity kff",
+              "_title": "SmartDashboard/Idan wheel velocity kff"
+            }
+          },
+          "10,5": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Idan RPM setpoint",
+              "_title": "SmartDashboard/Idan RPM setpoint"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Iris",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "titleType": 0,
+        "tiles": {
+          "0,0": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Iris buttom RPM",
+              "_title": "SmartDashboard/Iris buttom RPM",
+              "Graph/Visible time": 10.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Iris buttom RPM": true
+            }
+          },
+          "3,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris buttom RPM setpoint",
+              "_title": "SmartDashboard/Iris buttom RPM setpoint"
+            }
+          },
+          "3,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris buttom kp",
+              "_title": "SmartDashboard/Iris buttom kp"
+            }
+          },
+          "4,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris buttom ki",
+              "_title": "SmartDashboard/Iris buttom ki"
+            }
+          },
+          "5,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris buttom kd",
+              "_title": "SmartDashboard/Iris buttom kd"
+            }
+          },
+          "6,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris buttom kff",
+              "_title": "SmartDashboard/Iris buttom kff"
+            }
+          },
+          "11,0": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Iris top RPM",
+              "_title": "SmartDashboard/Iris top RPM",
+              "Graph/Visible time": 10.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Iris top RPM": true
+            }
+          },
+          "10,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris top setpoint",
+              "_title": "SmartDashboard/Iris top setpoint"
+            }
+          },
+          "9,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris top kff",
+              "_title": "SmartDashboard/Iris top kff"
+            }
+          },
+          "10,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris top kp",
+              "_title": "SmartDashboard/Iris top kp"
+            }
+          },
+          "9,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris top ki",
+              "_title": "SmartDashboard/Iris top ki"
+            }
+          },
+          "8,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris top kd",
+              "_title": "SmartDashboard/Iris top kd"
+            }
+          },
+          "5,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris wheel angle kd",
+              "_title": "SmartDashboard/Iris wheel angle kd"
+            }
+          },
+          "4,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris wheel angle ki",
+              "_title": "SmartDashboard/Iris wheel angle ki"
+            }
+          },
+          "3,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris wheel angle kp",
+              "_title": "SmartDashboard/Iris wheel angle kp"
+            }
+          },
+          "6,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris wheel angle kff",
+              "_title": "SmartDashboard/Iris wheel angle kff"
+            }
+          },
+          "0,4": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Iris angle deg",
+              "_title": "SmartDashboard/Iris angle deg",
+              "Graph/Visible time": 10.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Iris angle deg": true
+            }
+          },
+          "3,5": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris angle setpoint deg",
+              "_title": "SmartDashboard/Iris angle setpoint deg"
+            }
+          },
+          "4,5": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris angle velocity RPM",
+              "_title": "SmartDashboard/Iris angle velocity RPM"
+            }
+          },
+          "11,4": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/Iris wheel velcoity RPM",
+              "_title": "SmartDashboard/Iris wheel velcoity RPM",
+              "Graph/Visible time": 10.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": true,
+              "Y-axis/Upper bound": 1.0,
+              "Y-axis/Lower bound": -1.0,
+              "Y-axis/Unit": "ul",
+              "Visible data/SmartDashboard/Iris wheel velcoity RPM": true
+            }
+          },
+          "10,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris wheel velocity kp",
+              "_title": "SmartDashboard/Iris wheel velocity kp"
+            }
+          },
+          "9,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris wheel velocity ki",
+              "_title": "SmartDashboard/Iris wheel velocity ki"
+            }
+          },
+          "8,6": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris wheel velocity kd",
+              "_title": "SmartDashboard/Iris wheel velocity kd"
+            }
+          },
+          "9,5": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris wheel velocity kff",
+              "_title": "SmartDashboard/Iris wheel velocity kff"
+            }
+          },
+          "10,5": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Iris RPM setpoint",
+              "_title": "SmartDashboard/Iris RPM setpoint"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "windowGeometry": {
+    "x": -7.199999809265137,
+    "y": -7.199999809265137,
+    "width": 2062.39990234375,
+    "height": 1126.4000244140625
+  }
+}

@@ -8,6 +8,7 @@ import frc.robot.subsystems.Swerve.SwerveSubsytem;
 
 import java.util.function.DoubleSupplier;
 
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 
 /** An example command that uses an example subsystem. */
@@ -29,7 +30,7 @@ public class FieldOrientedCommand extends CommandBase {
     this.x_velocity = x_velocity;
     this.y_velocity = y_velocity;
     this.rotation_velocity = rotation_velocity;
-    this.max_velocity = 5;
+    this.max_velocity = 4;
     this.max_rotation = Math.PI;
     // Use addRequirements() here to declare subsystem dependencies.
     addRequirements(swerve_subsytem);
@@ -43,8 +44,24 @@ public class FieldOrientedCommand extends CommandBase {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    this.swerve_subsytem.set_modules_field_orianted(x_velocity.getAsDouble() * max_velocity,
-        y_velocity.getAsDouble() * max_velocity, rotation_velocity.getAsDouble() * max_rotation);
+
+    double corrected_x_velocity = x_velocity.getAsDouble();
+    double corrected_y_velocity = y_velocity.getAsDouble();
+    double corrected_rotation_velocity = rotation_velocity.getAsDouble();
+
+    if (Math.abs(corrected_x_velocity) < 0.2)
+      corrected_x_velocity = 0;
+    if (Math.abs(corrected_y_velocity) < 0.2)
+      corrected_y_velocity = 0;
+    if (Math.abs(corrected_rotation_velocity) < 0.2)
+      corrected_rotation_velocity = 0;
+    this.swerve_subsytem.set_modules_field_orianted(corrected_x_velocity * max_velocity,
+        corrected_y_velocity * max_velocity, corrected_rotation_velocity * max_rotation);
+    SmartDashboard.putNumber("left x", corrected_x_velocity);
+    SmartDashboard.putNumber("left y", corrected_y_velocity);
+    SmartDashboard.putNumber("right x",corrected_rotation_velocity);
+
+
   }
 
   // Called once the command ends or is interrupted.
